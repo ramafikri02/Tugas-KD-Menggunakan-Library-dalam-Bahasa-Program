@@ -1,0 +1,3 @@
+1 RewriteEngine On # Turn on the rewriting engine
+2 RewriteEngine ^employees/?$ employees.php [NC,L]
+3 RewriteEngine ^employees/([0-9]+)?$ employees.php?id=$1 [NC,L]
