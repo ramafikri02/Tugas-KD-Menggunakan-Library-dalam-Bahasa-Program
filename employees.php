@@ -33,7 +33,7 @@ switch($request_method) {
     break;
 }
 
-function get_employees() {
+function get_employees1() {
     global $connection;
     $query=("SELECT * FROM `tb_employee`");
     $response=array();
@@ -46,7 +46,7 @@ function get_employees() {
     echo json_encode($response);
 }
 
-function get_employees1($id=0) {
+function get_employees($id=0) {
     global $connection;
     $query=("SELECT * FROM `tb_employee`");
 
